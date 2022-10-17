@@ -51,6 +51,7 @@ class ET_Simulation extends Simulation {
         .repeat(2) {
           exec(flushHttpCache)
             .exec(flushCookieJar)
+          .exec(flushSessionCookies)
           .exec(ET_MakeAClaim.MakeAClaim)
             .exec(ET_MakeAClaimPt2.MakeAClaim)
         }

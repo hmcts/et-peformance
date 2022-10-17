@@ -2,7 +2,7 @@ package scenarios
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import utils.{AuthCheck, Common, CsrfCheck, Environment}
+import utils.{AuthCheck, Common, CsrfCheck, Environment, CookieCheck}
 
 import scala.concurrent.duration._
 import scala.util.Random
@@ -42,6 +42,7 @@ object ET_MakeAClaim {
         .get(BaseURL)
         .headers(CommonHeader)
         .header("sec-fetch-site", "none")
+     //   .check(CookieCheck.save)
         .check(substring("Make a claim to an employment tribunal")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -52,9 +53,13 @@ object ET_MakeAClaim {
     ======================================================================================*/
 
     .group("ET_020_Start") {
+   //   exec(getCookieValue(CookieKey("cookieToken")))
+
+
       exec(http("ET_020_005_Start")
         .get(BaseURL + "/checklist")
         .headers(CommonHeader)
+   //     .header("cookie", "${cookieToken}")
         .check(substring("Before you continue")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
