@@ -51,7 +51,7 @@ class ET_Simulation extends Simulation {
         // .exec(flushHttpCache)
         // .exec(flushCookieJar)
         // .exec(flushSessionCookies)
-        .repeat(1) {
+        .repeat(45) {
           feed(UserFeederET)
           // .exec(flushHttpCache)
           //   .exec(flushCookieJar)
@@ -77,7 +77,7 @@ class ET_Simulation extends Simulation {
   //).protocols(httpProtocol)
    // .assertions(assertions(testType))
 
-  setUp(ETCreateClaim.inject(rampUsers(2).during(1)))
+  setUp(ETCreateClaim.inject(rampUsers(1).during(1)))
     .protocols(httpProtocol)
     .maxDuration(4400)
 

@@ -452,7 +452,6 @@ object ET_MakeAClaimPt2 {
       exec(http("ET_450_005_Final_Check_Answers")
         .get(BaseURL + "/check-your-answers")
         .headers(CommonHeader)
-        .check(CsrfCheck.save)
         .check(substring("Check your answers")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
