@@ -11,7 +11,7 @@ import scala.concurrent.duration._
 class ET_Simulation extends Simulation {
 
   val BaseURL = Environment.baseURL
-  val UserFeederET1 = csv("UserDataET1.csv").circular
+  val UserFeederET1 = csv("UserDataET.csv").circular
   val UserFeederET2 = csv("UserDataET2.csv").circular
   val UserFeederET3 = csv("UserDataET3.csv").circular
 
@@ -37,7 +37,7 @@ class ET_Simulation extends Simulation {
   val httpProtocol = Environment.HttpProtocol
     .baseUrl(BaseURL)
     .doNotTrackHeader("1")
-    .inferHtmlResources()
+   // .inferHtmlResources()
     .silentResources
 
   before{
@@ -50,7 +50,7 @@ class ET_Simulation extends Simulation {
     .exitBlockOnFail {
  //   .repeat(1) {
       exec(  _.set("env", s"${env}"))
-        .repeat(15) {
+        .repeat(2) {
           feed(UserFeederET1)
           .exec(ET_MakeAClaim.MakeAClaim)
             .exec(ET_MakeAClaimPt2.MakeAClaim)
@@ -94,7 +94,7 @@ class ET_Simulation extends Simulation {
   //).protocols(httpProtocol)
    // .assertions(assertions(testType))
 
-  setUp(ETCreateClaim1.inject(rampUsers(1).during(1)))
+  setUp(ETCreateClaim1.inject(rampUsers(25).during(2100)))
     .protocols(httpProtocol)
     .maxDuration(4400)
 

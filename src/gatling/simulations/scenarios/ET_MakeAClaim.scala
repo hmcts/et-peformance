@@ -24,11 +24,15 @@ object ET_MakeAClaim {
 
   val postcodeFeeder = csv("postcodes.csv").circular
 
-  val MakeAClaim =
+  val MakeAClaim = {
 
-  exec(flushHttpCache)
+
+    /*
+    exec(flushHttpCache)
     .exec(flushCookieJar)
     .exec(flushSessionCookies)
+
+     */
 
 
   .exec(_.setAll(
@@ -356,7 +360,7 @@ object ET_MakeAClaim {
         .check(substring("Steps to making your claim")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
-
+  }
 
 
 }
