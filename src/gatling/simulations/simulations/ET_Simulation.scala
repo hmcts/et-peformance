@@ -48,14 +48,14 @@ class ET_Simulation extends Simulation {
     .exitBlockOnFail {
  //   .repeat(1) {
       exec(  _.set("env", s"${env}"))
-        .exec(flushHttpCache)
-        .exec(flushCookieJar)
-        .exec(flushSessionCookies)
+        // .exec(flushHttpCache)
+        // .exec(flushCookieJar)
+        // .exec(flushSessionCookies)
         .repeat(1) {
           feed(UserFeederET)
-          .exec(flushHttpCache)
-            .exec(flushCookieJar)
-            .exec(flushSessionCookies)
+          // .exec(flushHttpCache)
+          //   .exec(flushCookieJar)
+          //   .exec(flushSessionCookies)
           .exec(ET_MakeAClaim.MakeAClaim)
             .exec(ET_MakeAClaimPt2.MakeAClaim)
         }
@@ -77,7 +77,7 @@ class ET_Simulation extends Simulation {
   //).protocols(httpProtocol)
    // .assertions(assertions(testType))
 
-  setUp(ETCreateClaim.inject(rampUsers(25).during(500)))
+  setUp(ETCreateClaim.inject(rampUsers(2).during(1)))
     .protocols(httpProtocol)
     .maxDuration(4400)
 
