@@ -96,7 +96,7 @@ class ET_Simulation extends Simulation {
 
   setUp(ETCreateClaim1.inject(rampUsers(1).during(1)))
     .protocols(httpProtocol)
-    .maxDuration(4400)
+    .maxDuration(3600)
 
  /* setUp(ETCreateClaim2.inject(rampUsers(1).during(1)))
     .protocols(httpProtocol)

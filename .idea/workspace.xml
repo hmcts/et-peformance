@@ -17,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaim$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaim$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/simulations/ET_Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/simulations/ET_Simulation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/utils/Common$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/utils/Common$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/utils/Environment$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/utils/Environment$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileGatlingScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileGatlingScala.analysis" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaim.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaim.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gatling/simulations/simulations/ET_Simulation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/simulations/ET_Simulation.scala" afterDir="false" />
