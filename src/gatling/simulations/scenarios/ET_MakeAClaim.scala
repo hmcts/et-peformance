@@ -87,6 +87,7 @@ object ET_MakeAClaim {
           .headers(CommonHeader)
           .formParam("_csrf", "${csrf}")
           .formParam("workPostcode", "${postcode}")
+          .check(CsrfCheck.save)
           .check(substring("Are you making the claim for yourself, or representing someone else?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -102,6 +103,7 @@ object ET_MakeAClaim {
         .headers(CommonHeader)
         .formParam("_csrf", "${csrf}")
         .formParam("claimantRepresentedQuestion", "No")
+        .check(CsrfCheck.save)
         .check(substring("Are you making a claim on your own or with others?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -117,6 +119,7 @@ object ET_MakeAClaim {
         .headers(CommonHeader)
         .formParam("_csrf", "${csrf}")
         .formParam("caseType", "Single")
+        .check(CsrfCheck.save)
         .check(substring("Acas early conciliation certificate")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -132,6 +135,7 @@ object ET_MakeAClaim {
         .headers(CommonHeader)
         .formParam("_csrf", "${csrf}")
         .formParam("acasMultiple", "Yes")
+        .check(CsrfCheck.save)
         .check(substring("What type of claim are you making?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -213,6 +217,7 @@ object ET_MakeAClaim {
         .formParam("dobDate-day", Common.getDay())
         .formParam("dobDate-month", Common.getMonth())
         .formParam("dobDate-year", Common.getDobYear())
+        .check(CsrfCheck.save)
         .check(substring("Sex and preferred title")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -229,6 +234,7 @@ object ET_MakeAClaim {
         .formParam("_csrf", "${csrf}")
         .formParam("claimantSex", "Male")
         .formParam("preferredTitle", "")
+        .check(CsrfCheck.save)
         .check(substring("What is your contact or home address?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -258,6 +264,7 @@ object ET_MakeAClaim {
         .formParam("addressTown", "addressTown" + "${ETRandomString}")
         .formParam("addressCountry", "addressCountry" + "${ETRandomString}")
         .formParam("addressPostcode", "${postcode}")
+        .check(CsrfCheck.save)
         .check(substring("What is your telephone number")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -273,6 +280,7 @@ object ET_MakeAClaim {
         .headers(CommonHeader)
         .formParam("_csrf", "${csrf}")
         .formParam("telNumber", ("07712" + Common.randomNumber(6)))
+        .check(CsrfCheck.save)
         .check(substring("How would you like to be contacted about your claim?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -289,6 +297,7 @@ object ET_MakeAClaim {
         .headers(CommonHeader)
         .formParam("_csrf", "${csrf}")
         .formParam("claimantContactPreference", "Email")
+        .check(CsrfCheck.save)
         .check(substring("Would you be able to take part in hearings by video and phone?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -305,6 +314,7 @@ object ET_MakeAClaim {
         .formParam("_csrf", "${csrf}")
         .formParam("hearingPreferences", "Video")
         .formParam("hearingAssistance", "")
+        .check(CsrfCheck.save)
         .check(substring("Do you have a physical, mental or learning disability or long term health condition that means you need support during your case?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
@@ -321,6 +331,7 @@ object ET_MakeAClaim {
         .formParam("_csrf", "${csrf}")
         .formParam("reasonableAdjustmentsDetail", "")
         .formParam("reasonableAdjustments", "No")
+        .check(CsrfCheck.save)
         .check(substring("Have you completed this section?")))
     }
     .pause(MinThinkTime seconds, MaxThinkTime seconds)
