@@ -35,7 +35,7 @@ object ET_MakeAClaim {
      */
 
 
-  .exec(_.setAll(
+  exec(_.setAll(
       "ETRandomString" -> (Common.randomString(7))))
 
   //.exec(getCookieValue(CookieKey("et-sya-session,et-sya.perftest.platform.hmcts.net,/")))
