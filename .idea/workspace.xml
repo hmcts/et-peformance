@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28515916-0b43-4391-95fb-e9dac7ca85b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaim$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaim$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaimPt2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/scenarios/ET_MakeAClaimPt2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/scala/gatling/simulations/ET_Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/gatling/simulations/ET_Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileGatlingScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileGatlingScala.analysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaimPt2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaimPt2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gatling/simulations/simulations/ET_Simulation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/simulations/ET_Simulation.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

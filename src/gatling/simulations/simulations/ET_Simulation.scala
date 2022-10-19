@@ -45,8 +45,8 @@ class ET_Simulation extends Simulation {
   }
 
   val ETCreateClaim = scenario( "ETCreateClaim")
-    .exitBlockOnFail {
- //   .repeat(1) {
+ //   .exitBlockOnFail {
+    .repeat(1) {
       exec(  _.set("env", s"${env}"))
         // .exec(flushHttpCache)
         // .exec(flushCookieJar)
