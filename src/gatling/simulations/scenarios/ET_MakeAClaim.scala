@@ -34,11 +34,14 @@ object ET_MakeAClaim {
   .exec(_.setAll(
       "ETRandomString" -> (Common.randomString(7))))
 
+  //.exec(getCookieValue(CookieKey("et-sya-session,et-sya.perftest.platform.hmcts.net,/")))
+
     /*======================================================================================
     * Load the home page
     ======================================================================================*/
 
     .group("ET_010_Home") {
+
       exec(http("ET_010_005_Home")
         .get(BaseURL)
         .headers(CommonHeader)

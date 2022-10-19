@@ -9,8 +9,8 @@ object Environment {
   val idamURL = "https://idam-web-public.${env}.platform.hmcts.net"
 
 
-  val minThinkTime = 1
-  val maxThinkTime = 1
+  val minThinkTime = 5
+  val maxThinkTime = 7
 
   val HttpProtocol = http
 
