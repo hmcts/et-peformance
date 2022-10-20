@@ -26,14 +26,12 @@ object ET_MakeAClaim {
 
   val MakeAClaim = {
 
-
     /*
     exec(flushHttpCache)
     .exec(flushCookieJar)
     .exec(flushSessionCookies)
 
      */
-
 
   exec(_.setAll(
       "ETRandomString" -> (Common.randomString(7))))

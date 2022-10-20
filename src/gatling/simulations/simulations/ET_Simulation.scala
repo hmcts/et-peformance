@@ -94,7 +94,7 @@ class ET_Simulation extends Simulation {
   //).protocols(httpProtocol)
    // .assertions(assertions(testType))
 
-  setUp(ETCreateClaim1.inject(rampUsers(25).during(2100)))
+  setUp(ETCreateClaim1.inject(rampUsers(25).during(2300)))
     .protocols(httpProtocol)
     .maxDuration(4400)
 

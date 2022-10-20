@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="28515916-0b43-4391-95fb-e9dac7ca85b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaim.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/scenarios/ET_MakeAClaim.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gatling/simulations/utils/Environment.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatling/simulations/utils/Environment.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
